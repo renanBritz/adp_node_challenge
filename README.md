@@ -21,3 +21,11 @@ npm run test
 ```
 npm run start
 ```
+
+### If you have issues with ts-node on windows
+
+Install ts-node globally with
+
+```
+npm install -g ts-node
+```
