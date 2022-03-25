@@ -2,7 +2,7 @@ import axios from "axios";
 import { GET_TASK_URL, SUBMIT_INTERVAL, SUBMIT_TASK_URL } from "./constants";
 import handleTask from "./handleTask";
 import { Task } from "./types/task";
-import taskToStr from "./types/taskToStr";
+import taskToStr from "./taskToStr";
 
 const app = async () => {
   const run = async () => {

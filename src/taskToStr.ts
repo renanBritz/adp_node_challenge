@@ -1,4 +1,4 @@
-import { Task } from "./task";
+import { Task } from "./types/task";
 
 const taskToStr = (task: Task): string => {
   switch (task.operation) {

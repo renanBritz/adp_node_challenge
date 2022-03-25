@@ -1,5 +1,5 @@
 import { Task } from "./types/task";
-import taskToStr from "./types/taskToStr";
+import taskToStr from "./taskToStr";
 
 it("stringifies an addition operation", () => {
   const task: Task = {
