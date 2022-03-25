@@ -22,6 +22,12 @@ npm run test
 npm run start
 ```
 
+### Get coverage report with
+
+```
+npm run test:cover
+```
+
 ### If you have issues with ts-node on windows
 
 Install ts-node globally with

@@ -55,3 +55,13 @@ it("stringifies a remainder operation", () => {
   const str = taskToStr(task);
   expect(str).toBe("4 % 10");
 });
+
+it("throws error when given an invalid operation", () => {
+  const task: Task = {
+    id: "1",
+    operation: "operation" as any,
+    left: 4,
+    right: 10,
+  };
+  expect(() => taskToStr(task)).toThrow("Invalid operation!");
+});
