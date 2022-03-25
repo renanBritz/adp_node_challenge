@@ -4,7 +4,7 @@ import { GET_TASK_URL, SUBMIT_INTERVAL, SUBMIT_TASK_URL } from "./constants";
 
 jest.mock("axios");
 jest.useFakeTimers();
-const axios = axiosLib as jest.Mocked<ReturnType<typeof jest.spyOn>>;
+const axios = axiosLib as jest.Mocked<typeof axiosLib>;
 let mockConsoleLog: ReturnType<typeof jest.spyOn>;
 
 // Reference: https://stackoverflow.com/a/58716087
