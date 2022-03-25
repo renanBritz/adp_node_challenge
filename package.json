@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --watch 'src/' --exec 'ts-node src/app.ts' -e ts",
-    "test": "jest"
+    "start": "nodemon --watch \"src/\" --exec \"ts-node\" src/index.ts -e ts",
+    "test": "jest --watch"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "@types/jest": "^27.4.1",
+    "axios": "^0.26.1",
     "jest": "^27.5.1",
     "ts-jest": "^27.1.3"
   }
