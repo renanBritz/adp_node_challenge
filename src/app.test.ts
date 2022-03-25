@@ -77,10 +77,10 @@ it("logs every attempt", async () => {
   expect(mockConsoleLog).toHaveBeenCalledWith(
     "Submitting (-2359183595862927 * 6096720877741661) = -1.4383283883323152e+31"
   );
-  expect(console.log).toHaveBeenCalledWith("Correct!");
+  expect(mockConsoleLog).toHaveBeenCalledWith("Correct!");
 
   jest.advanceTimersByTime(SUBMIT_INTERVAL * 10);
   await flushPromises();
 
-  expect(console.log).toHaveBeenCalledTimes(22);
+  expect(mockConsoleLog).toHaveBeenCalledTimes(22);
 });
